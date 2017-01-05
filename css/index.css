@@ -1,0 +1,286 @@
+
+*{
+  font-family: "Jura", sans-serif;
+  font-size: 14px;
+}
+
+body {
+  width: 75%;
+  margin: 0 auto;
+}
+
+/**************************** HEADER ****************************/
+header {
+  height: 100px;
+  position: relative;
+}
+
+.logo-header {
+  position: absolute;
+  margin: 5px 0;
+}
+
+/** HORIZONTAL MENU **/
+.horizontal-menu {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.menu-item {
+  display: inline-block;
+  margin-left: 15px;
+  text-transform: uppercase;
+  font-weight: bolder;
+  }
+
+.menu-item a{
+  text-decoration: none;
+  color: #000;
+  font-size: 1.2em;
+  }
+
+.menu-item a:hover {
+  color: #066;
+  font-size: 1.6em;
+  text-shadow: 1px 1px 1px #006666;
+  transition: all 1s;
+}
+
+.menu-item a:active {
+  color: #0033ff;
+  transition: 0.3s;
+}
+
+/** SHOPPING CART MESSAGE AND IMAGE **/
+.shopping-cart-msg {
+  position: absolute;
+  background: url(../img/sacola.png) no-repeat top right;
+  top: 1%;
+  right: 0;
+  width: 200px;
+  text-align: right;
+  padding-right: 35px;
+}
+
+/**************************** BODY ****************************/
+
+
+/**************************** TOP CONTAINER ****************************/
+
+.top-container {
+  padding: 0;
+}
+
+/** SEARCH SECTION and DEPARTMENT SECTION **/
+.search-section, .department-section {
+  width: 20%;
+  background-color: #c2d6d6;
+  border-top-right-radius: 10%;
+  border-bottom-left-radius: 10%;
+  position: relative;
+  float: left;
+  clear: left;
+  margin-bottom: 1%;
+  padding: 1%;
+  box-sizing: border-box;
+}
+
+.search-section h2, .department-section h2 {
+  text-align: center;
+  box-sizing:content-box;
+  padding: 2%;
+  margin: 1%;
+  font-size: 1.3em;
+}
+
+form.search-form {
+  display: block;
+  width: 170px;
+  margin: 0 auto;
+  margin-bottom: 4%;
+}
+
+.search-form input[type="search"] {
+  width: 120px;
+  margin-right: 5px;
+}
+
+/** DEPARTMENT SECTION **/
+
+
+.vertical-menu ul {
+  padding: 0;
+  list-style-type: none;
+}
+
+.vertical-menu li {
+  border-bottom: 1px solid grey;
+  margin: 5%;
+  padding: 5px;
+  }
+
+.vertical-menu a{
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+  text-shadow: 2px 2px 5px black;
+  font-size: 1.3em;
+
+}
+
+/** SUBMENU HOVER CONFIGURATION **/
+.sub-menu-blusas li{
+  display: none;
+}
+
+.blusas:hover ul li{
+  display: block;
+}
+
+.vertical-menu ul a:hover {
+  color: #ff0000;
+  font-size: 20px;
+  text-shadow: none;
+  transition: all 0.5s;
+}
+
+.vertical-menu ul a:active {
+  color: #0033ff;
+  transition: 0.3s;
+}
+
+
+/** BANNER **/
+
+.banner-img {
+ display: block;
+ width: 75%;
+margin: 0 0 2% auto;
+}
+
+.banner-img:hover {
+  filter: brightness(1.1);
+  filter: grayscale(1.2);
+}
+
+
+/**************************** BOTTOM CONTAINER ****************************/
+
+/** NOVIDADES E MAIS VENDIDOS **/
+
+section.novidades, section.mais-vendidos {
+  width: 49%;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #c2d6d6;
+  border-top-right-radius: 10%;
+  border-bottom-left-radius: 10%;
+  box-shadow: 2px 2px 10px #334d4d;
+}
+
+section.novidades {
+  float: left;
+  margin: 0 5px 1% 0;
+}
+
+section.mais-vendidos {
+  float: right;
+}
+
+.novidades h2, .mais-vendidos h2 {
+  text-align: center;
+  font-size: 1.5em;
+  color: #FFF;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.8);
+}
+
+.novidades li, .mais-vendidos li {
+  display: inline-block;
+  box-sizing: border-box;
+  transition: .5s ease-out;
+}
+
+.novidades figure, .mais-vendidos figure{
+  margin: 2px;
+}
+
+.novidades figcaption, .mais-vendidos figcaption {
+  text-align: center;
+  color: #000;
+  padding-top: 5px;
+  padding-bottom: 10px;
+}
+
+.novidades a, .mais-vendidos a {
+  text-decoration: none;
+  }
+
+.novidades ul, .mais-vendidos ol {
+  text-align: center;
+  padding: 0;
+
+}
+
+/** NOVIDADES E MAIS VENDIDOS ANIMAÇÃO **/
+
+section.novidades ul li:hover,
+section.mais-vendidos ol li:hover {
+  box-shadow: 0px 0px 1px 1px #334d4d;
+  background-color: #FFF;
+  transform: scale(1.3);
+  transition: 1s ease-in;
+}
+
+.novidades figcaption:hover, .mais-vendidos figcaption:hover {
+  font-weight: bolder;
+}
+
+
+
+/**************************** FOOTER ****************************/
+
+footer {
+  background-image: url("../img/fundo-rodape.png");
+  clear: both;
+  height: 100px;
+  position: relative;
+}
+
+.logo-footer {
+  position: absolute;
+  left: 1%;
+  top: 25%;
+}
+
+.social-footer a[href="https://www.facebook.com"] {
+  background: url("../img/facebook.png") no-repeat;
+}
+
+.social-footer a[href="https://twitter.com"] {
+  background: url("../img/twitter.png") no-repeat;
+}
+
+.social-footer a[href="https://plus.google.com"] {
+  background: url("../img/googleplus.png") no-repeat;
+}
+
+.social-footer a{
+  text-decoration: none;
+  display: inline-block;
+  height: 32px;
+  width: 32px;
+  text-indent: -9999px;
+}
+
+ul.social-footer {
+  list-style: none;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+ul.social-footer li{
+  float: left;
+  margin: 5px;
+}

@@ -1,0 +1,163 @@
+/**************************** RESPONSIVE ****************************/
+
+@media (max-width:1060px) {
+
+.menu-item a{
+  font-size: 1em;
+}
+
+.menu-item a:hover {
+  font-size: 1.3em;
+}
+
+.search-form input[type="search"] {
+  width: 100px;
+}
+
+.search-section h2, .department-section h2 {
+  font-size: 1.1em;
+}
+
+.vertical-menu a {
+  font-size: 1.1em;
+}
+
+}
+
+@media (max-width:960px) {
+
+
+/** HEADER **/
+header {
+  position: relative;
+  margin-bottom: 2%;
+}
+
+.shopping-cart-msg {
+  display: none;
+}
+
+.logo-header {
+  position: static;
+  display: block;
+  width: 180px;
+  margin: 0 auto;
+}
+
+.horizontal-menu {
+  position: static;
+  text-align: center;
+}
+
+.horizontal-menu ul{
+  padding: 0;
+}
+
+.horizontal-menu a {
+  font-size: 1em;
+}
+
+.horizontal-menu:before {
+  content: url(../img/busca.png);
+  display: inline-block;
+  position: absolute;
+  right: 0;
+}
+
+/** INDEX BODY**/
+.search-section {
+    display: none;
+}
+
+.search-section h2, .department-section h2 {
+  font-size: .9em;
+  text-transform: capitalize;
+}
+
+.vertical-menu a {
+  font-size: .9em;
+}
+
+.vertical-menu ul a:hover {
+  font-size: 1em;
+}
+
+section.novidades, section.mais-vendidos {
+  width: 100%;
+  margin-bottom: 3%;
+}
+
+/** PRODUTOS BODY**/
+
+.produto-form {
+  position: static;
+}
+
+.colors {
+  position: relative;
+  margin: 0 auto;
+  width: 50%;
+}
+
+.tamanho, input.comprar {
+  position: static;
+  width: 50%;
+  margin: 2% auto;
+}
+
+/** CHECKOUT BODY**/
+
+.dados-pessoais, .credit-card, button[name="confirmar"] {
+  width: 70%;
+  float: right;
+  margin: 1%;
+}
+
+
+
+}
+
+@media (max-width:660px){
+
+.department-section {
+  display: none;
+}
+
+.banner-img {
+ display: block;
+ width: 100%;
+}
+
+.horizontal-menu ul {
+  visibility: hidden;
+}
+
+footer {
+  padding: 2%;
+}
+
+.logo-footer {
+  position: static;
+  display: block;
+  width: 25%;
+  margin: 3% auto;
+}
+
+ul.social-footer {
+  position: static;
+  display: block;
+  width: 130px;
+  height: 50px;
+  padding: 0;
+  margin: 0 auto;
+}
+
+/** CHECKOUT BODY**/
+
+.dados-pessoais, .credit-card, button[name="confirmar"], .shopping-description {
+  width: 100%;
+  margin: 1% 0;
+}
+
+
+}
